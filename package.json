@@ -1,0 +1,35 @@
+{
+  "name": "gulp-date-rev",
+  "version": "0.0.1",
+  "description": "Static asset revisioning by datestamp (yyyyMMdd) with version number (xx) to filenames: index_app.js => index_app.20160510-00.js",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulpplugin",
+    "rev",
+    "revving",
+    "revision",
+    "version",
+    "versioning"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivcogit/gulp-date-rev.git"
+  },
+  "dependencies": {
+    "fancy-log": "^1.2.0",
+    "glob": "^7.0.3",
+    "modify-filename": "^1.1.0",
+    "rev-hash": "~1.0.0",
+    "through2": "^2.0.0",
+    "vinyl-file": "^1.1.0"
+  }
+}
