@@ -1,8 +1,8 @@
 # gulp-date-rev
->Static asset revisioning by datestamp (yyyyMMdd) with version number (xx) to filenames: 
->index_app.js => index_app.20160510-00.js.
->If there is no difference file to be created with the latest version, the file is not created. 
->Otherwise, it creates a version with a mask. The first day is numbered as version 00.
+Static asset revisioning by datestamp (yyyyMMdd) with version number (xx) to filenames: 
+index_app.js => index_app.20160510-00.js.
+If there is no difference file to be created with the latest version, the file is not created. 
+Otherwise, it creates a version with a mask. The first day is numbered as version 00.
 
 ## Install
 ```
