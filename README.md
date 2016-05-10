@@ -6,7 +6,7 @@ Otherwise, it creates a version with a mask. The first day is numbered as versio
 
 ## Install
 ```
-$ npm install --save-dev gulp-date-rev
+$ npm install gulp-date-rev
 ```
 
 ## Usage
