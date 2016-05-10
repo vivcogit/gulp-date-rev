@@ -1,7 +1,7 @@
 {
   "name": "gulp-date-rev",
   "version": "0.0.2",
-  "description": "Static asset revisioning by datestamp (yyyyMMdd) with version number (xx) to filenames: index_app.js => index_app.20160510-00.js",
+  "description": "Static asset revisioning by datestamp and version number to filenames",
   "license": "MIT",
   "engines": {
     "node": ">=0.10.0"
