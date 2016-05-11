@@ -29,10 +29,9 @@ function getVersionStamp(file) {
 
   var filename = path.basename(file.path);
 
-  var stamp = filename
-                .slice(filename.indexOf('.')+1)
-                .slice(0, stamp.indexOf('.'))
-                .split('-');
+  var stamp = filename.slice(filename.indexOf('.')+1);
+      stamp = stamp.slice(0, stamp.indexOf('.'));
+      stamp = stamp.split('-');
 
   if (stamp[0] == currentDatespamp) {
     return currentDatespamp + '-' + ('0'+(parseInt(stamp[1])+1)).slice(-2);
