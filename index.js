@@ -62,8 +62,9 @@ function getUTCDatestamp() {
   return date.getUTCFullYear() + ('0' + (date.getUTCMonth() + 1)).slice(-2) + ('0' + date.getUTCDate()).slice(-2);
 }
 
-var plugin = function (destination) {
+var plugin = function (destination, options) {
   var sourcemaps = [];
+  options = options || {};
 
   return through.obj(function (file, enc, cb) {
     if (file.isNull()) {
@@ -87,10 +88,18 @@ var plugin = function (destination) {
     if (isNeedNewVersion(file, lastVersionFile)) {
       transformFilename(file, lastVersionFile);
       logger('gulp-date-rev:', 'Created new version:', path.basename(file.path));
+      if (options.callback != undefined && typeof(options.callback) === 'function') {
+        options.callback(file.versionStamp);
+      }
+
       cb(null, file);
     } else {
       logger('gulp-date-rev:', 'Version of file', path.basename(lastVersionFilename), 'is actual');
-      cb(null, null);
+      if (options.callback != undefined && typeof(options.callback) === 'function') {
+        options.callback(getVersionStamp(lastVersionFile));
+      }
+
+      cb(null, options.continue ? file : null);
     }
   });
 };
