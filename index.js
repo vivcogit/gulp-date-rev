@@ -96,7 +96,9 @@ var plugin = function (destination, options) {
     } else {
       logger('gulp-date-rev:', 'Version of file', path.basename(lastVersionFilename), 'is actual');
       if (options.callback != undefined && typeof(options.callback) === 'function') {
-        options.callback(getVersionStamp(file));
+        var currentVersion = lastVersionFilename.slice(lastVersionFilename.indexOf('.')+1);
+        currentVersion =  currentVersion.slice(0, currentVersion.indexOf('.'));
+        options.callback(currentVersion);
       }
 
       cb(null, options.continue ? file : null);
