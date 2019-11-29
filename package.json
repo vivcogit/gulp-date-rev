@@ -29,8 +29,8 @@
     "fancy-log": "^1.2.0",
     "glob": "^7.0.3",
     "modify-filename": "^1.1.0",
-    "rev-hash": "~1.0.0",
-    "through2": "^2.0.0",
-    "vinyl-file": "^1.1.0"
+    "rev-hash": "^3.0.0",
+    "through2": "^3.0.0",
+    "vinyl-file": "^3.0.0"
   }
 }
