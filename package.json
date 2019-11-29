@@ -1,9 +1,15 @@
 {
   "name": "gulp-date-rev",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "description": "Static asset revisioning by datestamp and version number to filenames",
   "license": "MIT",
-  "author": "vivcogit",
+  "author": {
+    "name": "Anton Khmyrov",
+    "email": "vivcogit@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/vivcogit/gulp-date-rev/issues"
+  },
   "engines": {
     "node": ">=0.10.0"
   },
