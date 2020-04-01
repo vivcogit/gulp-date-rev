@@ -1,6 +1,6 @@
 {
   "name": "gulp-date-rev",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Static asset revisioning by datestamp and version number to filenames",
   "license": "MIT",
   "author": {
